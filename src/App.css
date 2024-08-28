@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
+}
+/* Header Section */
+.header-section {
+  padding: 50px 0;
+  background-color: #f9fbfc;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-section p {
+  margin-bottom: 30px;
+  color: #666;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.lady-image {
+  width: 80%;
+  position: relative;
+  z-index: 1;
+}
+
+.info-box {
+  position: absolute;
+  background-color: #2e7748;
+  color: #fff;
+  border-radius: 50%;
+  padding: 15px;
+  width: 120px;
+  height: 120px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+.courses-info {
+  top: 20%;
+  left: -10%;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
+.rating-info {
+  top: 20%;
+  right: 5%;
+  background-color: #fff;
+  color: #2e7748;
+}
+
+/* Dots Animation */
+@keyframes rotate-dots {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
+}
+
+.dots-shape {
+  top: 5%;
+  left: 5%;
+  width: 50px;
+  animation: rotate-dots 10s linear infinite;
+}
+
+/* Arrow Wiggle Animation */
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.yellow-arrow {
+  top: 30%;
+  right: 75%;
+  width: 50px;
+  animation: wiggle 3s ease-in-out infinite;
+}
+
+.green-arrow {
+  top: 55%;
+  right: 15%;
+  width: 50px;
+  animation: wiggle 3s ease-in-out infinite;
+}
+
+/* Optional: You can also add a subtle transition effect */
+.yellow-arrow,
+.green-arrow {
+  transition: transform 0.5s ease-in-out;
 }

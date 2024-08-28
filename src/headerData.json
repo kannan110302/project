@@ -1,0 +1,48 @@
+{
+    "navbar": {
+      "brand": {
+        "src": "https://htmldemo.net/edule/eduLe/assets/images/logo.png",
+        "alt": "EduLe"
+      },
+      "links": [
+        { "name": "Home", "href": "/" },
+        { "name": "All Courses", "href": "/courses" },
+        { "name": "Pages", "href": "/pages" },
+        { "name": "Blog", "href": "/blog" },
+        { "name": "Contact", "href": "/contact" },
+        { "name": "Sign In", "href": "/signin" }
+      ],
+      "signUpButton": {
+        "text": "Sign Up",
+        "variant": "outline-success"
+      }
+    },
+    "header": {
+      "backgroundColor": "#f9fbfc",
+      "title": "Now learning from anywhere, and build your bright career.",
+      "subtitle": "It has survived not only five centuries but also the leap into electronic typesetting.",
+      "button": {
+        "text": "Start A Course",
+        "href": "/courses",
+        "variant": "success"
+      },
+      "images": {
+        "underline": "https://htmldemo.net/edule/eduLe/assets/images/shape/shape-6.png",
+        "lady": "https://htmldemo.net/edule/eduLe/assets/images/slider/slider-1.png",
+        "yellowArrow": "https://htmldemo.net/edule/eduLe/assets/images/shape/shape-5.png",
+        "greenArrow": "https://htmldemo.net/edule/eduLe/assets/images/shape/shape-7.png",
+        "dots": "https://htmldemo.net/edule/eduLe/assets/images/shape/shape-8.png"
+      },
+      "stats": {
+        "courses": {
+          "number": "1,235",
+          "text": "courses"
+        },
+        "rating": {
+          "value": "4.8",
+          "text": "Rating (86K)"
+        }
+      }
+    }
+  }
+  
