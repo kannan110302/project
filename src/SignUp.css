@@ -1,0 +1,66 @@
+.signup-page {
+    padding-top: 60px; /* Adjust padding to ensure sticky Navbar visibility */
+    background-color: #f9fbfc;
+    min-height: 100vh;
+  }
+  
+  .signup-container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff; /* White background for the entire form container */
+    border-radius: 10px; /* Rounded corners for the entire container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside the container */
+    border: 1px solid #d4d4d4; /* Border around the entire form container */
+  }
+  
+  .image-wrapper {
+    background-color: #e6f5ee; /* Light green background */
+    padding: 10px; /* Reduced padding for smaller background */
+    border-radius: 10px 0 0 10px; /* Rounded corners on the left side */
+  }
+  
+  .signup-image {
+    width: 95%; /* Make the image take up the full width of its container */
+    max-width: 350px; /* Reduce max width to fit better within the new padding */
+    height: 450px;
+    margin: 0 auto;
+  }
+  
+  .signup-form {
+    padding: 30px;
+    border-radius: 0 10px 10px 0; /* Rounded corners on the right side */
+  }
+  
+  .signup-form h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2e7748;
+  }
+  
+  .signup-form h3 span {
+    color: #00a78e; /* Adjust color as needed */
+  }
+  
+  .signup-form .form-control {
+    margin-bottom: 15px;
+    height: 50px;
+    font-size: 1rem;
+  }
+  
+  .signup-form .btn {
+    height: 50px;
+    font-size: 1rem;
+  }
+  
+  .signup-form .btn-outline-secondary {
+    border-color: #00a78e;
+    color: #00a78e;
+  }
+  
+  .signup-form .btn-outline-secondary:hover {
+    background-color: #00a78e;
+    color: #fff;
+  }
+  

@@ -1,17 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-import Example from './Home';
-import Navbar from './Home';
 import CustomNavbar from './HomePage';
+import SignIn from './SignIn';
 
 function App() {
   return (
     <>
-     {/* <Example /> */}
+     
      <div className="App">
-      {/* <Navbar /> */}
+      
       <CustomNavbar />
-      {/* Other components */}
+      {/* <SignIn /> */}
+      
     </div>
 
     </>

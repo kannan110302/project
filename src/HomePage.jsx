@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Button, Container, Row, Col } from 'react-bootstrap';
 import { FaBook, FaStar } from 'react-icons/fa';
+import { Link } from 'react-router-dom'; // Import Link for routing
 import headerData from './headerData.json'; // Import the JSON file
 
 const CustomNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='Home'>
+    <div className="Home">
       <Navbar bg="light" expand="lg" className="shadow-lg sticky-top">
         <Container>
           {/* Logo */}
-          <Navbar.Brand href="/">
+          <Navbar.Brand as={Link} to="/">
             <img
               src={headerData.navbar.brand.src}
               alt={headerData.navbar.brand.alt}
@@ -27,13 +28,18 @@ const CustomNavbar = () => {
           <Navbar.Collapse id="basic-navbar-nav" className={isOpen ? "show" : ""}>
             <Nav className="ml-auto">
               {headerData.navbar.links.map((link, index) => (
-                <Nav.Link key={index} href={link.href} className="text-gray-800">
+                <Nav.Link as={Link} key={index} to={link.href} className="text-gray-800">
                   {link.name}
                 </Nav.Link>
               ))}
             </Nav>
             <Nav className="ml-3">
-              <Button variant={headerData.navbar.signUpButton.variant} className="ml-2">
+              <Button
+                as={Link}
+                to={headerData.navbar.signUpButton.href}
+                variant={headerData.navbar.signUpButton.variant}
+                className="ml-2"
+              >
                 {headerData.navbar.signUpButton.text}
               </Button>
             </Nav>
