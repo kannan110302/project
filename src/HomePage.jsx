@@ -51,6 +51,11 @@ const CustomNavbar = () => {
         <Container>
           <Row className="align-items-center">
             <Col md={6} className="text-center text-md-start">
+            <img
+                  src={headerData.header.images.dots}
+                  alt="dots"
+                  className="position-absolute dots-shape"
+                />
               <h1 className="mb-4">
                 {headerData.header.title.split(',').map((line, index) => (
                   <React.Fragment key={index}>
@@ -104,11 +109,7 @@ const CustomNavbar = () => {
                   alt="green arrow"
                   className="position-absolute green-arrow"
                 />
-                <img
-                  src={headerData.header.images.dots}
-                  alt="dots"
-                  className="position-absolute dots-shape"
-                />
+                
               </div>
             </Col>
           </Row>

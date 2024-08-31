@@ -42,12 +42,12 @@
 
 .courses-info {
   top: 20%;
-  left: -10%;
+  left: -5%;
   color: #fff;
 }
 
 .rating-info {
-  top: 20%;
+  top: 16%;
   right: 5%;
   background-color: #fff;
   color: #2e7748;
@@ -64,9 +64,9 @@
 }
 
 .dots-shape {
-  top: 5%;
-  left: 5%;
-  width: 50px;
+  top: 17%;
+  left: 7%;
+  width: 80px;
   animation: rotate-dots 10s linear infinite;
 }
 
@@ -90,16 +90,16 @@
 }
 
 .yellow-arrow {
-  top: 30%;
+  top: 12%;
   right: 75%;
-  width: 50px;
+  width: 75px;
   animation: wiggle 3s ease-in-out infinite;
 }
 
 .green-arrow {
-  top: 55%;
+  top: 50%;
   right: 15%;
-  width: 50px;
+  width: 70px;
   animation: wiggle 3s ease-in-out infinite;
 }
 
