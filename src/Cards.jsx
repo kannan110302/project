@@ -126,7 +126,8 @@
 
 import React, { useState } from 'react';
 import courseData from './courseData.json';
-import { Carousel, Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Carousel } from 'react-bootstrap';
+import ButtonSlider from './Test';
 
 const CoursesSection = () => {
   const [selectedCategory, setSelectedCategory] = useState('UI/UX Design');
@@ -174,17 +175,10 @@ const CoursesSection = () => {
       <Row className="mb-4">
         <Col>
           <h2>Courses</h2>
-          <div className="d-flex justify-content-around">
-            {Object.keys(courseData).map((category, index) => (
-              <Button
-                key={index}
-                variant={selectedCategory === category ? 'primary' : 'outline-primary'}
-                onClick={() => handleCategoryChange(category)}
-              >
-                {category}
-              </Button>
-            ))}
-          </div>
+          <ButtonSlider
+            categories={Object.keys(courseData)}
+            onSelectCategory={handleCategoryChange}
+          />
         </Col>
       </Row>
       <Row>
