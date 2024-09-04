@@ -9,9 +9,10 @@ function App() {
     <>
      
      <div className="App">
+     <CustomNavbar />
       <CoursesSection />
       {/* <ButtonSlider /> */}
-      {/* <CustomNavbar /> */}
+      
       {/* <SignIn /> */}
       
     </div>
