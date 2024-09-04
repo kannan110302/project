@@ -1,0 +1,468 @@
+{
+    "UI/UX Design": [
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-01.jpg",
+        "title": "UI/UX Design Essentials",
+        "instructor": "Jason Williams",
+        "duration": "08 hr 15 mins",
+        "lectures": "29 Lectures",
+        "price": "$385.00",
+        "discountedPrice": "$440.00",
+        "rating": "4.9"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-02.jpg",
+        "title": "Advanced UX Strategies",
+        "instructor": "Pamela Foster",
+        "duration": "10 hr 30 mins",
+        "lectures": "35 Lectures",
+        "price": "$420.00",
+        "rating": "4.8"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-03.jpg",
+        "title": "User Interface Design Patterns",
+        "instructor": "Samuel Lee",
+        "duration": "06 hr 45 mins",
+        "lectures": "24 Lectures",
+        "price": "$300.00",
+        "rating": "4.7"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-04.jpg",
+        "title": "Mobile App UI Design",
+        "instructor": "Nina Richards",
+        "duration": "09 hr 15 mins",
+        "lectures": "31 Lectures",
+        "price": "$370.00",
+        "rating": "4.8"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-05.jpg",
+        "title": "Introduction to UX Research",
+        "instructor": "Robert Thomas",
+        "duration": "05 hr 30 mins",
+        "lectures": "20 Lectures",
+        "price": "$295.00",
+        "discountedPrice": "$340.00",
+        "rating": "4.9"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-06.jpg",
+        "title": "Wireframing and Prototyping",
+        "instructor": "Alice Brown",
+        "duration": "07 hr 45 mins",
+        "lectures": "28 Lectures",
+        "price": "$360.00",
+        "rating": "4.7"
+      }
+    ],
+    "Development": [
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-04.jpg",
+        "title": "Full-Stack Web Development",
+        "instructor": "Rose Simmons",
+        "duration": "12 hr 30 mins",
+        "lectures": "40 Lectures",
+        "price": "$450.00",
+        "discountedPrice": "$500.00",
+        "rating": "4.9"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-03.jpg",
+        "title": "React for Beginners",
+        "instructor": "David Wilson",
+        "duration": "08 hr 00 mins",
+        "lectures": "30 Lectures",
+        "price": "$320.00",
+        "rating": "4.8"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-01.jpg",
+        "title": "Node.js and Express",
+        "instructor": "Sarah Thompson",
+        "duration": "09 hr 15 mins",
+        "lectures": "32 Lectures",
+        "price": "$385.00",
+        "rating": "4.7"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-02.jpg",
+        "title": "Mastering JavaScript",
+        "instructor": "Mark Taylor",
+        "duration": "10 hr 45 mins",
+        "lectures": "38 Lectures",
+        "price": "$400.00",
+        "rating": "4.8"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-05.jpg",
+        "title": "Introduction to Python",
+        "instructor": "Linda Evans",
+        "duration": "07 hr 20 mins",
+        "lectures": "26 Lectures",
+        "price": "$350.00",
+        "discountedPrice": "$395.00",
+        "rating": "4.9"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-06.jpg",
+        "title": "Advanced CSS Techniques",
+        "instructor": "Emma Green",
+        "duration": "06 hr 45 mins",
+        "lectures": "22 Lectures",
+        "price": "$310.00",
+        "rating": "4.7"
+      }
+    ],
+    "Data Science": [
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-06.jpg",
+        "title": "Data Science Fundamentals",
+        "instructor": "Michael Roberts",
+        "duration": "10 hr 00 mins",
+        "lectures": "35 Lectures",
+        "price": "$420.00",
+        "discountedPrice": "$470.00",
+        "rating": "4.9"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-03.jpg",
+        "title": "Machine Learning A-Z",
+        "instructor": "Sophia White",
+        "duration": "12 hr 45 mins",
+        "lectures": "42 Lectures",
+        "price": "$490.00",
+        "rating": "4.8"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-05.jpg",
+        "title": "Deep Learning Mastery",
+        "instructor": "James Johnson",
+        "duration": "15 hr 20 mins",
+        "lectures": "50 Lectures",
+        "price": "$540.00",
+        "rating": "4.9"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-02.jpg",
+        "title": "Data Analysis with Python",
+        "instructor": "Emily Davis",
+        "duration": "08 hr 30 mins",
+        "lectures": "28 Lectures",
+        "price": "$380.00",
+        "rating": "4.7"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-04.jpg",
+        "title": "SQL for Data Science",
+        "instructor": "Isabella Martinez",
+        "duration": "07 hr 45 mins",
+        "lectures": "26 Lectures",
+        "price": "$340.00",
+        "discountedPrice": "$380.00",
+        "rating": "4.8"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-01.jpg",
+        "title": "Big Data Engineering",
+        "instructor": "Olivia Brown",
+        "duration": "11 hr 00 mins",
+        "lectures": "38 Lectures",
+        "price": "$460.00",
+        "rating": "4.9"
+      }
+    ],
+    "Business": [
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-06.jpg",
+        "title": "Business Management 101",
+        "instructor": "Lucas Johnson",
+        "duration": "09 hr 30 mins",
+        "lectures": "32 Lectures",
+        "price": "$410.00",
+        "discountedPrice": "$460.00",
+        "rating": "4.9"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-05.jpg",
+        "title": "Entrepreneurship Essentials",
+        "instructor": "Amelia White",
+        "duration": "08 hr 45 mins",
+        "lectures": "30 Lectures",
+        "price": "$390.00",
+        "rating": "4.8"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-04.jpg",
+        "title": "Financial Accounting",
+        "instructor": "Henry Martinez",
+        "duration": "10 hr 15 mins",
+        "lectures": "36 Lectures",
+        "price": "$435.00",
+        "rating": "4.9"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-03.jpg",
+        "title": "Marketing Strategies",
+        "instructor": "Lily Davis",
+        "duration": "07 hr 50 mins",
+        "lectures": "27 Lectures",
+        "price": "$350.00",
+        "rating": "4.7"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-02.jpg",
+        "title": "Business Analytics",
+        "instructor": "Charlotte Brown",
+        "duration": "11 hr 00 mins",
+        "lectures": "40 Lectures",
+        "price": "$475.00",
+        "discountedPrice": "$525.00",
+        "rating": "4.8"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-01.jpg",
+        "title": "Human Resource Management",
+        "instructor": "Aiden Wilson",
+        "duration": "06 hr 30 mins",
+        "lectures": "22 Lectures",
+        "price": "$320.00",
+        "rating": "4.7"
+      }
+    ],
+    "Financial": [
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-03.jpg",
+        "title": "Financial Planning",
+        "instructor": "Mia Johnson",
+        "duration": "07 hr 30 mins",
+        "lectures": "25 Lectures",
+        "price": "$370.00",
+        "discountedPrice": "$420.00",
+        "rating": "4.9"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-06.jpg",
+        "title": "Investment Strategies",
+        "instructor": "Jackson Lee",
+        "duration": "08 hr 45 mins",
+        "lectures": "28 Lectures",
+        "price": "$390.00",
+        "rating": "4.8"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-04.jpg",
+        "title": "Corporate Finance",
+        "instructor": "Sophia Martinez",
+        "duration": "09 hr 30 mins",
+        "lectures": "30 Lectures",
+        "price": "$420.00",
+        "rating": "4.9"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-01.jpg",
+        "title": "Taxation and Audit",
+        "instructor": "Alexander Davis",
+        "duration": "06 hr 15 mins",
+        "lectures": "20 Lectures",
+        "price": "$320.00",
+        "rating": "4.7"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-05.jpg",
+        "title": "Personal Finance Management",
+        "instructor": "Ella White",
+        "duration": "05 hr 50 mins",
+        "lectures": "18 Lectures",
+        "price": "$290.00",
+        "discountedPrice": "$330.00",
+        "rating": "4.8"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-02.jpg",
+        "title": "Risk Management",
+        "instructor": "Daniel Wilson",
+        "duration": "07 hr 00 mins",
+        "lectures": "25 Lectures",
+        "price": "$350.00",
+        "rating": "4.9"
+      }
+    ],
+    "Marketing": [
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-05.jpg",
+        "title": "Digital Marketing Mastery",
+        "instructor": "Lucas Lee",
+        "duration": "08 hr 20 mins",
+        "lectures": "28 Lectures",
+        "price": "$380.00",
+        "discountedPrice": "$420.00",
+        "rating": "4.9"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-03.jpg",
+        "title": "SEO and Content Marketing",
+        "instructor": "Emily Johnson",
+        "duration": "07 hr 10 mins",
+        "lectures": "24 Lectures",
+        "price": "$350.00",
+        "rating": "4.8"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-01.jpg",
+        "title": "Social Media Strategy",
+        "instructor": "Michael Brown",
+        "duration": "09 hr 00 mins",
+        "lectures": "32 Lectures",
+        "price": "$400.00",
+        "rating": "4.9"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-04.jpg",
+        "title": "Email Marketing Campaigns",
+        "instructor": "Sophia Wilson",
+        "duration": "06 hr 30 mins",
+        "lectures": "22 Lectures",
+        "price": "$330.00",
+        "rating": "4.7"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-06.jpg",
+        "title": "Brand Management",
+        "instructor": "Isabella Davis",
+        "duration": "10 hr 15 mins",
+        "lectures": "36 Lectures",
+        "price": "$450.00",
+        "discountedPrice": "$500.00",
+        "rating": "4.8"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-02.jpg",
+        "title": "Market Research Techniques",
+        "instructor": "Olivia Martinez",
+        "duration": "07 hr 45 mins",
+        "lectures": "26 Lectures",
+        "price": "$340.00",
+        "rating": "4.7"
+      }
+    ],
+    "Design": [
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-03.jpg",
+        "title": "Graphic Design Basics",
+        "instructor": "Liam Johnson",
+        "duration": "06 hr 00 mins",
+        "lectures": "20 Lectures",
+        "price": "$320.00",
+        "discountedPrice": "$360.00",
+        "rating": "4.9"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-04.jpg",
+        "title": "Creative Photoshop Techniques",
+        "instructor": "Ethan Martinez",
+        "duration": "07 hr 15 mins",
+        "lectures": "24 Lectures",
+        "price": "$350.00",
+        "rating": "4.8"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-06.jpg",
+        "title": "Typography Fundamentals",
+        "instructor": "Ava Wilson",
+        "duration": "05 hr 45 mins",
+        "lectures": "18 Lectures",
+        "price": "$310.00",
+        "rating": "4.7"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-05.jpg",
+        "title": "Design Thinking",
+        "instructor": "Mason Lee",
+        "duration": "08 hr 30 mins",
+        "lectures": "28 Lectures",
+        "price": "$380.00",
+        "rating": "4.9"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-01.jpg",
+        "title": "User Interface Design",
+        "instructor": "Sophia Brown",
+        "duration": "09 hr 15 mins",
+        "lectures": "32 Lectures",
+        "price": "$400.00",
+        "discountedPrice": "$450.00",
+        "rating": "4.8"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-02.jpg",
+        "title": "3D Modeling Basics",
+        "instructor": "Harper Davis",
+        "duration": "11 hr 00 mins",
+        "lectures": "38 Lectures",
+        "price": "$460.00",
+        "rating": "4.9"
+      }
+    ],
+    "Data analyst": [
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-04.jpg",
+        "title": "Full-Stack Web Development",
+        "instructor": "Rose Simmons",
+        "duration": "12 hr 30 mins",
+        "lectures": "40 Lectures",
+        "price": "$450.00",
+        "discountedPrice": "$500.00",
+        "rating": "4.9"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-03.jpg",
+        "title": "React for Beginners",
+        "instructor": "David Wilson",
+        "duration": "08 hr 00 mins",
+        "lectures": "30 Lectures",
+        "price": "$320.00",
+        "rating": "4.8"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-01.jpg",
+        "title": "Node.js and Express",
+        "instructor": "Sarah Thompson",
+        "duration": "09 hr 15 mins",
+        "lectures": "32 Lectures",
+        "price": "$385.00",
+        "rating": "4.7"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-02.jpg",
+        "title": "Mastering JavaScript",
+        "instructor": "Mark Taylor",
+        "duration": "10 hr 45 mins",
+        "lectures": "38 Lectures",
+        "price": "$400.00",
+        "rating": "4.8"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-05.jpg",
+        "title": "Introduction to Python",
+        "instructor": "Linda Evans",
+        "duration": "07 hr 20 mins",
+        "lectures": "26 Lectures",
+        "price": "$350.00",
+        "discountedPrice": "$395.00",
+        "rating": "4.9"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-06.jpg",
+        "title": "Advanced CSS Techniques",
+        "instructor": "Emma Green",
+        "duration": "06 hr 45 mins",
+        "lectures": "22 Lectures",
+        "price": "$310.00",
+        "rating": "4.7"
+      }
+    ]
+
+  }
+  
