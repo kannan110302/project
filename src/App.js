@@ -3,16 +3,21 @@ import CustomNavbar from './HomePage';
 import SignIn from './SignIn';
 import CoursesSection from './Cards';
 import ButtonSlider from './Test';
+import Banner from './Banner';
 
 function App() {
   return (
     <>
      
      <div className="App">
-     <CustomNavbar />
-      <CoursesSection />
-      {/* <ButtonSlider /> */}
+
       
+      <CustomNavbar />
+      <CoursesSection />  
+      <Banner />
+
+
+      {/* <ButtonSlider /> */}
       {/* <SignIn /> */}
       
     </div>

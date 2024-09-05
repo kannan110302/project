@@ -1,0 +1,177 @@
+.banner-container {
+    background-color: #eaf7f0; /* light green */
+    padding: 40px;
+    margin: 50px auto; /* Adds margin around the container */
+    border-radius: 20px;
+    max-width: 80%; /* Limits the width to 80% for better centering */
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slight shadow for a polished look */
+}
+
+.text-column {
+    text-align: center; /* Centers the content */
+}
+
+.sub-heading {
+    font-size: 18px;
+    color: #77b47d; /* light green */
+}
+
+.main-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #303030;
+}
+
+.highlight {
+    color: #77b47d;
+}
+
+.underline-imageone {
+    display: block;
+    margin: 10px auto 0 auto; /* Centering the underline image */
+    width: 150px;
+}
+
+.button-column {
+    text-align: center;
+    position: relative;
+}
+
+.drop-info-btnone {
+    background-color: #387c52;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    position: relative;
+    z-index: 2;
+}
+
+.green-arrowone {
+    position: absolute;
+    top: 7px;
+    left: -6%;
+    /*transform: translateX(-50%) rotate(-45deg);  /*Ensures the arrow points at the button */
+    width: 100px;
+    height: auto;
+    z-index: 1;
+    transform: rotate(0deg); /* Initial rotation */
+    animation: pointInOut 1s infinite; /* Apply the pointing animation */
+
+}
+
+
+.yellow-dotsone {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    animation: rotateDots 6s infinite linear; /* Continuous 360-degree rotation */
+}
+
+.yellow-dots-leftone {
+    top: 20px;
+    left: 15px;
+}
+
+.yellow-dots-rightone {
+    bottom: 20px;
+    right: 15px;
+}
+
+/* Animation for rotating the dots */
+@keyframes rotateDots {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+    .green-arrowone {
+        top: 10px; /* Adjusted for better positioning */
+        left: -10%; /* Move it slightly to the left for screens smaller than 1440px */
+        width: 100px; /* Slightly reduce the size of the arrow */
+    }
+}
+
+@media (max-width: 1200px) {
+    .green-arrowone {
+        top: 5px; /* Adjusted for smaller screens */
+        left: -15%; /* Further adjust the left position */
+        width: 80px; /* Make the arrow smaller */
+    }
+}
+
+@media (max-width: 992px) {
+    .green-arrowone {
+        top: 0; /* Position it closer to the button */
+        left: -20%; /* Move left to keep it aligned with the button */
+        width: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .underline-imageone {
+        width: 100px;
+    }
+
+    .green-arrowone {
+        top: 10px;
+        width: 60px;
+        left: -15%; /* Ensure it stays aligned on smaller screens */
+    }
+
+    .drop-info-btnone {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .main-heading {
+        font-size: 20px;
+    }
+
+    .text-column {
+        padding-left: 5%; /* Adjust for smaller screens */
+    }
+
+    .button-column {
+        padding-right: 0; /* Ensure button stays centered */
+    }
+}
+@media (max-width: 425px) {
+    .green-arrowone {
+        top: 10px;
+        width: 60px;
+        left: 10%; /* Ensure it stays aligned on smaller screens */
+    }
+}
+@media (max-width: 375px) {
+    .green-arrowone {
+        top: 10px;
+        width: 60px;
+        left: 6%; /* Ensure it stays aligned on smaller screens */
+    }
+}
+@media (max-width: 320px) {
+    .green-arrowone {
+        top: 10px;
+        width: 60px;
+        left: 1%; /* Ensure it stays aligned on smaller screens */
+    }
+}
+@keyframes pointInOut {
+    0% {
+        transform: translateX(0) rotate(0deg); /* Original position and rotation */
+    }
+    50% {
+        transform: translateX(10px) rotate(0deg); /* Move out to the right */
+    }
+    100% {
+        transform: translateX(0) rotate(0deg); /* Move back to original position */
+    }
+}
+

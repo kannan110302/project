@@ -45,12 +45,24 @@
   left: -1%;
   color: #fff;
 }
+.courses-info .book{
+  margin-left: 15px;
+}
 
 .rating-info {
   top: 16%;
   right: 5%;
   background-color: #fff;
   color: #2e7748;
+  
+}
+.rating-info .star{
+  color: yellow;
+  margin-left: 58px;
+  position: absolute;
+}
+.rating-info .rate{
+  position : relative;
 }
 
 /* Dots Animation */

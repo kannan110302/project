@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Button, Container, Row, Col } from 'react-bootstrap';
-import { FaBook, FaStar } from 'react-icons/fa';
+import { SlBookOpen } from 'react-icons/sl';
+import { IoStar } from 'react-icons/io5';
 import { Link } from 'react-router-dom'; // Import Link for routing
 import headerData from './headerData.json'; // Import the JSON file
 
@@ -85,15 +86,15 @@ const CustomNavbar = () => {
                 {/* Courses and Rating Divs */}
                 <div className="info-box courses-info">
                   <div className="content">
-                    <FaBook className="mb-2" size={24} />
+                    <SlBookOpen className="mb-2 book" size={24} />
                     <h5 className="mb-1">{headerData.header.stats.courses.number}</h5>
                     <p className="mb-0 text-white">{headerData.header.stats.courses.text}</p>
                   </div>
                 </div>
                 <div className="info-box rating-info">
                   <div className="content">
-                    <FaStar className="mb-2" size={24} />
-                    <h5 className="mb-1">{headerData.header.stats.rating.value}</h5>
+                    <IoStar className=" star" size={24} />
+                    <h5 className="mb-0 rate">{headerData.header.stats.rating.value}</h5>
                     <p className="mb-0">{headerData.header.stats.rating.text}</p>
                   </div>
                 </div>
