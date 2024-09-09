@@ -1,9 +1,9 @@
 import './App.css';
 import CustomNavbar from './HomePage';
 import SignIn from './SignIn';
-import CoursesSection from './Cards';
+//import CoursesSection from './Cards';
 import ButtonSlider from './Test';
-import Banner from './Banner';
+//import Banner from './Banner';
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
 
       
       <CustomNavbar />
-      <CoursesSection />  
-      <Banner />
+      {/* <CoursesSection />   */}
+      {/* <Banner /> */}
 
 
       {/* <ButtonSlider /> */}
