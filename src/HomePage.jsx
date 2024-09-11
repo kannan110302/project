@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import CoursesSection from './Cards';
 import Banner from './Banner';
+import HowItWorks from './Certificate';
 import { Navbar, Nav, Button, Container, Row, Col } from 'react-bootstrap';
 import { SlBookOpen } from 'react-icons/sl';
 import { IoStar } from 'react-icons/io5';
 import { Link } from 'react-router-dom'; // Import Link for routing
 import headerData from './headerData.json'; // Import the JSON file
+
 
 const CustomNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -120,6 +122,7 @@ const CustomNavbar = () => {
       </header>
       <CoursesSection />  
       <Banner />
+      <HowItWorks />
     </div>
   );
 };

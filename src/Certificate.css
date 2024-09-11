@@ -1,0 +1,194 @@
+.how-it-works-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #fffdfd;
+  }
+  .right-markarrow{
+    left:105%;
+    top:45%;
+  }
+  
+  .course-count-text {
+    font-size: 1.5rem;
+    color: #28a745;
+    margin-bottom: 10px;
+  }
+  
+  .how-it-works-heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .underline-text {
+    position: relative;
+  }
+  
+  .underline-img {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .how-it-works-row {
+    display: flex;
+     justify-content: space-between; 
+    flex-direction:row;
+  }
+  
+  .how-it-works-card {
+    width:300px;
+    background-color: #E7F8EE !important;
+    padding: 20px ; 
+    margin: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .how-it-works-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-icon {
+    font-size: 45px;
+    color: #28a745;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    border: 2px solid #28a745;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  @media (max-width: 768px) {
+    .how-it-works-row {
+      flex-direction: column;
+    }
+  
+    .how-it-works-card {
+      margin-bottom: 30px;
+    }
+  
+    .right-arrow {
+      display: none;
+    }
+  }
+  
+
+   /* .how-it-works-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #fffdfd;
+}
+
+.course-count-text {
+    font-size: 1.5rem;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.how-it-works-heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.underline-text {
+    position: relative;
+}
+
+.underline-img {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.how-it-works-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.how-it-works-card {
+    width: 300px;
+    background-color: #E7F8EE !important;
+    padding: 20px; 
+    margin: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.how-it-works-card:hover {
+    transform: scale(1.05);
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icon {
+    font-size: 45px;
+    color: #28a745;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    border: 2px solid #28a745;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.right-arrow {
+    display: block;
+    width: 50px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    .how-it-works-row {
+        flex-direction: column;
+    }
+
+    .how-it-works-card {
+        margin-bottom: 30px;
+    }
+
+    .right-arrow {
+        display: none;
+    }
+} */

@@ -4,6 +4,7 @@ import SignIn from './SignIn';
 //import CoursesSection from './Cards';
 import ButtonSlider from './Test';
 //import Banner from './Banner';
+//import HowItWorks from './Certificate';
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
      <div className="App">
 
       
-      <CustomNavbar />
+      <CustomNavbar /> 
+      {/* <HowItWorks /> */}
+
       {/* <CoursesSection />   */}
       {/* <Banner /> */}
 

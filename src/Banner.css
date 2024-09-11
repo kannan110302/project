@@ -3,7 +3,7 @@
     padding: 40px;
     margin: 50px auto; /* Adds margin around the container */
     border-radius: 20px;
-    max-width: 80%; /* Limits the width to 80% for better centering */
+    max-width: 80%; /*Limits the width to 80% for better centering */
     position: relative;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slight shadow for a polished look */
 }
