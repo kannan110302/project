@@ -5,6 +5,7 @@ import SignIn from './SignIn';
 import ButtonSlider from './Test';
 //import Banner from './Banner';
 //import HowItWorks from './Certificate';
+import Testimonials from './Testimonials';
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
      <div className="App">
 
       
-      <CustomNavbar /> 
+      {/* <CustomNavbar />  */}
       {/* <HowItWorks /> */}
-
+          <Testimonials />
       {/* <CoursesSection />   */}
       {/* <Banner /> */}
 

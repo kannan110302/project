@@ -1,0 +1,139 @@
+.testimonial-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #ffffff; /* White background for the entire section */
+  position: relative;
+}
+
+.section-title {
+  font-size: 20px;
+  color: #5dbc7b;
+  font-weight: bold;
+  position: relative;
+}
+
+.feedback-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.underscore-img {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feedback-title .highlight {
+  color: #29bb89;
+  text-decoration: underline;
+  text-decoration-color: #29bb89;
+}
+
+.testimonial-carousel {
+  position: relative;
+}
+
+.testimonial-carousel .carousel-indicators {
+  bottom: -40px;
+}
+
+.testimonial-carousel .carousel-indicators li {
+  background-color: #29bb89;
+}
+
+.testimonial-carousel .carousel-indicators .active {
+  background-color: #5dbc7b;
+}
+
+.testimonial-row {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-card {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid #d3f0e2; /* Light green border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: border 0.3s ease; /* Smooth transition for border change */
+}
+
+.testimonial-card:hover {
+  border-color: #5dbc7b; /* Light green border on hover */
+  transform: scale(1.02); /* Slightly enlarge the card */
+}
+
+.testimonial-content {
+  position: relative;
+  padding: 30px;
+}
+
+.image-container {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author-img {
+  width: 100%;
+  height: auto;
+}
+
+.rating {
+  font-size: 24px;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.testimonial-content p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.testimonial-content h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.role {
+  font-size: 14px;
+  color: #777;
+}
+
+.arrow-img {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-30deg);
+  width: 50px;
+}
+
+@media (max-width: 768px) {
+  .testimonial-row {
+      flex-direction: column;
+  }
+
+  .testimonial-card {
+      margin-bottom: 20px;
+  }
+
+  .arrow-img {
+      bottom: -20px;
+  }
+}

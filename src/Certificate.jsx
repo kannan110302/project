@@ -33,7 +33,7 @@ const HowItWorks = () => {
             <img 
               src="https://template.hasthemes.com/edule/eduLe/assets/images/shape/shape-17.png"
               alt="Right Arrow"
-              className="position-absolute right-markarrow"
+              className="position-absolute d-none d-lg-block right-markarrow"
             />
           </Card>
         </Col>
@@ -52,7 +52,7 @@ const HowItWorks = () => {
             <img 
               src="https://template.hasthemes.com/edule/eduLe/assets/images/shape/shape-17.png"
               alt="Right Arrow"
-              className="position-absolute right-markarrow"
+              className="position-absolute d-none d-lg-block right-markarrow"
             />
           </Card>
         </Col>
