@@ -1,0 +1,33 @@
+{
+    "Business": [
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-06.jpg",
+        "title": "Business Management 101",
+        "instructor": "Lucas Johnson",
+        "duration": "09 hr 30 mins",
+        "lectures": "32 Lectures",
+        "price": "$410.00",
+        "discountedPrice": "$460.00",
+        "rating": "4.9"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-05.jpg",
+        "title": "Entrepreneurship Essentials",
+        "instructor": "Amelia White",
+        "duration": "08 hr 45 mins",
+        "lectures": "30 Lectures",
+        "price": "$390.00",
+        "rating": "4.8"
+      },
+      {
+        "image": "https://htmldemo.net/edule/eduLe/assets/images/courses/courses-04.jpg",
+        "title": "Financial Accounting",
+        "instructor": "Henry Martinez",
+        "duration": "10 hr 15 mins",
+        "lectures": "36 Lectures",
+        "price": "$435.00",
+        "rating": "4.9"
+      }
+    ]
+  }
+  

@@ -22,10 +22,10 @@
 .underscore-img {
   display: block;
   margin: 0 auto;
-  width: 50px;
+  width: 160px;
   position: absolute;
-  bottom: -20px;
-  left: 50%;
+  bottom: -10px;
+  left: 60%;
   transform: translateX(-50%);
 }
 
@@ -35,10 +35,12 @@
   text-decoration-color: #29bb89;
 }
 
+/* Carousel Styles */
 .testimonial-carousel {
   position: relative;
 }
 
+/* Align carousel indicators */
 .testimonial-carousel .carousel-indicators {
   bottom: -40px;
 }
@@ -51,27 +53,27 @@
   background-color: #5dbc7b;
 }
 
+/* Card Row Styling */
 .testimonial-row {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Center the row */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 20px; /* Add gap between the cards */
 }
 
+/* Card Styling */
 .testimonial-card {
+  flex: 0 1 100%; /* Full width for each card within a slide */
   margin-bottom: 30px;
   padding: 20px;
   background-color: white;
   border-radius: 10px;
   border: 2px solid #d3f0e2; /* Light green border */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-  transition: border 0.3s ease; /* Smooth transition for border change */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
-.testimonial-card:hover {
-  border-color: #5dbc7b; /* Light green border on hover */
-  transform: scale(1.02); /* Slightly enlarge the card */
-}
-
+/* Card Content Styling */
 .testimonial-content {
   position: relative;
   padding: 30px;
@@ -116,24 +118,52 @@
   color: #777;
 }
 
-.arrow-img {
+/* .arrow-img {
   position: absolute;
-  bottom: -30px;
-  left: 50%;
+  bottom: 250px;
+  left: 40%;
   transform: translateX(-50%) rotate(-30deg);
   width: 50px;
+} */
+
+/* Media Queries for Responsiveness */
+
+/* For Extra Large Screens (Above 1200px) */
+@media (min-width: 1200px) {
+  .testimonial-card {
+    flex: 0 1 100%; /* Full width for each card within a slide */
+  }
 }
 
+/* For Large Screens (992px and Above) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-card {
+    flex: 0 1 100%; /* Full width for each card within a slide */
+  }
+}
+
+/* For Medium Screens (768px and Below) */
 @media (max-width: 768px) {
   .testimonial-row {
-      flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .testimonial-card {
-      margin-bottom: 20px;
+    flex: 0 1 90%; /* Adjust width for medium screens */
+    margin: 0 auto 20px; /* Center cards and add bottom margin */
+    padding: 15px; /* Adjust padding for better fit */
+  }
+
+  .testimonial-section {
+    padding: 20px; /* Reduce padding on medium screens */
+  }
+
+  .testimonial-content {
+    padding: 20px; /* Reduce padding for better fit */
   }
 
   .arrow-img {
-      bottom: -20px;
+    bottom: -20px;
   }
 }

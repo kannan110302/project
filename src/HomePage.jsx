@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import CoursesSection from './Cards';
 import Banner from './Banner';
 import HowItWorks from './Certificate';
+import Testimonials from './Testimonials';
+import Courses from './Tips';
+import Footer from './Footer';
 import { Navbar, Nav, Button, Container, Row, Col } from 'react-bootstrap';
 import { SlBookOpen } from 'react-icons/sl';
 import { IoStar } from 'react-icons/io5';
@@ -123,6 +126,9 @@ const CustomNavbar = () => {
       <CoursesSection />  
       <Banner />
       <HowItWorks />
+      <Testimonials />
+      <Courses />
+      <Footer />
     </div>
   );
 };

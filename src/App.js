@@ -6,20 +6,22 @@ import ButtonSlider from './Test';
 //import Banner from './Banner';
 //import HowItWorks from './Certificate';
 import Testimonials from './Testimonials';
+import Courses from './Tips';
 
-function App() {
+
+function App() { 
   return (
     <>
      
      <div className="App">
-
       
-      {/* <CustomNavbar />  */}
+      
+       <CustomNavbar />  
       {/* <HowItWorks /> */}
-          <Testimonials />
+          {/* <Testimonials /> */}
       {/* <CoursesSection />   */}
       {/* <Banner /> */}
-
+           {/* <Courses /> */}
 
       {/* <ButtonSlider /> */}
       {/* <SignIn /> */}

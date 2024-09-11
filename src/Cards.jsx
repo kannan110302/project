@@ -163,7 +163,7 @@ const CoursesSection = () => {
             <Card.Text>
               <strong>Rating:</strong> {course.rating}
             </Card.Text>
-            <Button variant="primary">Enroll Now</Button>
+            <Button variant="success">Enroll Now</Button>
           </Card.Body>
         </Card>
       </Col>

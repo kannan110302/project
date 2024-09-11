@@ -1,96 +1,176 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
 .how-it-works-container {
-    text-align: center;
-    padding: 50px;
-    background-color: #fffdfd;
-  }
-  .right-markarrow{
-    left:105%;
-    top:45%;
-  }
-  
-  .course-count-text {
-    font-size: 1.5rem;
-    color: #28a745;
-    margin-bottom: 10px;
-  }
-  
-  .how-it-works-heading {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    position: relative;
-  }
-  
-  .underline-text {
-    position: relative;
-  }
-  
-  .underline-img {
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
+  text-align: center;
+  padding: 50px;
+  background-color: #fffdfd;
+}
+
+/* Header section */
+.course-count-text {
+  font-size: 1.5rem;
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.how-it-works-heading {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.underline-text {
+  position: relative;
+}
+
+.underline-img {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.how-it-works-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+/* Card styles */
+.how-it-works-card {
+  width: 100%;
+  max-width: 300px;
+  background-color: #E7F8EE !important;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.how-it-works-card:hover {
+  transform: scale(1.05);
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-icon {
+  font-size: 45px;
+  color: #28a745;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  border: 2px solid #28a745;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* Arrows */
+.right-markarrow {
+  position: absolute;
+  left: 105%;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  /* background-color: #28a745; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.right-markarrow:hover {
+  background-color: #1e7e34;
+}
+
+/* Hover Effect */
+.how-it-works-card:hover .right-markarrow {
+  background-color: #218838;
+}
+
+/* Responsive Styles */
+
+/* Media query for screens 768px and below */
+@media (max-width: 768px) {
   .how-it-works-row {
-    display: flex;
-     justify-content: space-between; 
-    flex-direction:row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
-  
+
   .how-it-works-card {
-    width:300px;
-    background-color: #E7F8EE !important;
-    padding: 20px ; 
-    margin: 20px 25px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    position: relative;
-  }
-  
-  .how-it-works-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .icon-container {
-    margin-bottom: 20px;
+    width: 100%;
+    max-width: 90%;
+    margin: 20px auto;
     display: flex;
     justify-content: center;
-    align-items: center;
   }
-  
-  .card-icon {
-    font-size: 45px;
-    color: #28a745;
-    background-color: white;
-    border-radius: 50%;
-    padding: 10px;
-    border: 2px solid #28a745;
+
+  .right-markarrow {
+    display: none;
   }
-  
-  .card-title {
+
+  .how-it-works-heading {
+    font-size: 2rem;
+  }
+
+  .course-count-text {
     font-size: 1.25rem;
-    font-weight: bold;
   }
-  
-  .card-description {
+}
+
+/* Additional small screen adjustments for 576px and below */
+@media (max-width: 576px) {
+  .how-it-works-card {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .how-it-works-heading {
+    font-size: 1.75rem;
+  }
+
+  .course-count-text {
     font-size: 1rem;
-    color: #6c757d;
   }
-  
-  @media (max-width: 768px) {
-    .how-it-works-row {
-      flex-direction: column;
-    }
-  
-    .how-it-works-card {
-      margin-bottom: 30px;
-    }
-  
-    .right-arrow {
-      display: none;
-    }
+
+  .card-title {
+    font-size: 1.1rem;
   }
+
+  .card-description {
+    font-size: 0.9rem;
+  }
+
+  .card-icon {
+    font-size: 35px;
+  }
+}
+
+
   
 
    /* .how-it-works-container {

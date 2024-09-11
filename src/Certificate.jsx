@@ -7,7 +7,7 @@ import './Certificate.css'; // Assuming you have this CSS file for custom styles
 
 const HowItWorks = () => {
   return (
-    <Container  className="how-it-works-container">
+    <Container className="how-it-works-container">
       <h2 className="course-count-text">Over 1,235+ Course</h2>
       <h3 className="how-it-works-heading">
         How It <span className="underline-text">Work?</span>
@@ -18,9 +18,9 @@ const HowItWorks = () => {
         />
       </h3>
       
-      <Row className="how-it-works-row ">
-        <Col lg={4} sm={12}>
-          <Card className="position-relative how-it-works-card ">
+      <Row className="how-it-works-row justify-content-center">
+        <Col lg={4} md={6} sm={12} className="d-flex justify-content-center">
+          <Card className="position-relative how-it-works-card">
             <div className="position-relative icon-container">
               <FiSearch className="card-icon" />
             </div>
@@ -38,8 +38,8 @@ const HowItWorks = () => {
           </Card>
         </Col>
 
-        <Col lg={4} sm={12}>
-          <Card className="position-relative how-it-works-card ">
+        <Col lg={4} md={6} sm={12} className="d-flex justify-content-center">
+          <Card className="position-relative how-it-works-card">
             <div className="position-relative icon-container">
               <FaBook className="card-icon" />
             </div>
@@ -57,8 +57,8 @@ const HowItWorks = () => {
           </Card>
         </Col>
 
-        <Col lg={4} sm={12}>
-          <Card className="position-relative how-it-works-card ">
+        <Col lg={4} md={6} sm={12} className="d-flex justify-content-center">
+          <Card className="position-relative how-it-works-card">
             <div className="position-relative icon-container">
               <FaCertificate className="card-icon" />
             </div>
@@ -76,6 +76,7 @@ const HowItWorks = () => {
 };
 
 export default HowItWorks;
+
 
 
 // import React from 'react';
