@@ -78,7 +78,7 @@
 .dots-shape {
   top: 17%;
   left: 7%;
-  width: 80px;
+  width: 110px;
   animation: rotate-dots 10s linear infinite;
 }
 
@@ -104,14 +104,14 @@
 .yellow-arrow {
   top: 12%;
   right: 75%;
-  width: 75px;
+  width: 85px;
   animation: wiggle 3s ease-in-out infinite;
 }
 
 .green-arrow {
   top: 50%;
   right: 15%;
-  width: 70px;
+  width: 80px;
   animation: wiggle 3s ease-in-out infinite;
 }
 

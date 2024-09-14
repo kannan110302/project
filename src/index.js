@@ -7,6 +7,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
+import AllCourses from './AllCourses'; 
+import Blog from './Blog';
+import Contact from './Contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +19,9 @@ root.render(
         <Route path = "/" element = {<App />}/>
         <Route path = "/SignIn" element = {<SignIn />}/>
         <Route path = "/SignUp" element = {<SignUp />}/>
+        <Route path="/courses" element={<AllCourses />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -68,8 +68,8 @@
   padding: 20px;
   background-color: white;
   border-radius: 10px;
-  border: 2px solid #d3f0e2; /* Light green border */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /*border: 2px solid #d3f0e2;  Light green border */
+  /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
   box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 

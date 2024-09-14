@@ -1,0 +1,54 @@
+/* Hero Section Styles */
+.hero-section1 {
+    position: relative;
+    padding: 50px 0;
+    background-color: #f0f7f5;
+    overflow: hidden; /* Ensures no content exceeds the section */
+}
+
+/* Green Wave */
+.green-wave1 {
+    bottom: 0; /* Attach the wave to the bottom of the section */
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0; /* Ensure it's behind the content */
+    position: absolute;
+}
+
+/* Rotating Orange Dots */
+.rotating-dots1 {
+    animation: rotate360 10s linear infinite; /* Smooth continuous rotation */
+}
+
+/* 360-degree rotation animation */
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Ensuring that images inside the hero section are responsive */
+.hero-section1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Heading and Text Styles */
+.hero-section1 h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2b513e;
+}
+
+.hero-section1 p {
+    color: #6d6d6d;
+}
+
+/* Author Image Styles */
+.hero-section1 .rounded-circle1 {
+    border: 5px solid #fff;
+}
