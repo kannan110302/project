@@ -10,6 +10,9 @@ import SignUp from './SignUp';
 import AllCourses from './AllCourses'; 
 import Blog from './Blog';
 import Contact from './Contact';
+import LoginPage from './LoginPage';
+import AdminPanel from './AdminPanel';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +25,9 @@ root.render(
         <Route path="/courses" element={<AllCourses />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/admin/*" element={<AdminPanel />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

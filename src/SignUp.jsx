@@ -35,6 +35,10 @@ const SignUp = () => {
                   <Form.Control type="email" placeholder="Email" />
                 </Form.Group>
 
+                <Form.Group controlId="formPhoneNumber">
+                  <Form.Control type="PhoneNumber" placeholder="PhoneNumber" />
+                </Form.Group>
+
                 <Form.Group controlId="formPassword">
                   <Form.Control type="password" placeholder="Password" />
                 </Form.Group>
@@ -43,7 +47,7 @@ const SignUp = () => {
                   <Form.Control type="password" placeholder="Confirm Password" />
                 </Form.Group>
 
-                <Button variant="success" type="submit" className="w-100 mb-3">
+                <Button variant="success" type="submit" className="w-100 mb-3 onClick={handleSignUp}">
                   Create an account
                 </Button>
 

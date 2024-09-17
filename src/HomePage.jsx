@@ -1,16 +1,4 @@
-import React, { useState } from 'react';
-import Header from './Header';
-import CoursesSection from './Cards';
-import Banner from './Banner';
-import HowItWorks from './Certificate';
-import Testimonials from './Testimonials';
-import Courses from './Tips';
-import Footer from './Footer';
-import { Navbar, Nav, Button, Container, Row, Col } from 'react-bootstrap';
-import { SlBookOpen } from 'react-icons/sl';
-import { IoStar } from 'react-icons/io5';
-import { Link } from 'react-router-dom'; // Import Link for routing
-import headerData from './headerData.json'; // Import the JSON file
+
 
 
 // const CustomNavbar = () => {
@@ -140,6 +128,21 @@ import headerData from './headerData.json'; // Import the JSON file
 // CustomNavbar.jsx
 
 
+
+import React, { useState } from 'react';
+import Header from './Header';
+import CoursesSection from './Cards';
+import Banner from './Banner';
+import HowItWorks from './Certificate';
+import Testimonials from './Testimonials';
+import Courses from './Tips';
+import Footer from './Footer';
+import { Navbar, Nav, Button, Container, Row, Col } from 'react-bootstrap';
+import { SlBookOpen } from 'react-icons/sl';
+import { IoStar } from 'react-icons/io5';
+import { Link } from 'react-router-dom'; // Import Link for routing
+import headerData from './headerData.json'; // Import the JSON file
+
 const CustomNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -165,7 +168,7 @@ const CustomNavbar = () => {
         <Navbar.Collapse id="basic-navbar-nav" className={isOpen ? 'show' : ''}>
           <Nav className="ml-auto">
             {headerData.navbar.links.map((link, index) => (
-              <Nav.Link as={Link} key={index} to={link.href} className="text-gray-800">
+              <Nav.Link as={Link} key={index} to={link.href} className="navtext">
                 {link.name}
               </Nav.Link>
             ))}
