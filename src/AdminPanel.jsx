@@ -280,7 +280,6 @@
 
 
 
-
 import React, { useState, useEffect } from 'react';
 import { Container, Navbar, Nav, Button, Row, Col, Card, Table, Form, Dropdown } from 'react-bootstrap';
 import { useNavigate, Link, Route, Routes, useParams } from 'react-router-dom';
@@ -330,13 +329,58 @@ const Dashboard = () => {
   );
 };
 
-// Users Component
-// Users Component
 const Users = ({ users, setUsers }) => {
+  const [selectedUsers, setSelectedUsers] = useState([]); // State to track selected users
+  const [searchTerm, setSearchTerm] = useState(''); // State for search term
+
+  // Filter users based on search term
+  const filteredUsers = users.filter(
+    (user) =>
+      user.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      user.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      user.phone.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      user.password.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      user.confirmPassword.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const handleCheckboxChange = (id) => {
+    setSelectedUsers((prevSelected) =>
+      prevSelected.includes(id)
+        ? prevSelected.filter((userId) => userId !== id)
+        : [...prevSelected, id]
+    );
+  };
+
+  const handleSelectAll = (e) => {
+    if (e.target.checked) {
+      setSelectedUsers(filteredUsers.map((user) => user._id));
+    } else {
+      setSelectedUsers([]);
+    }
+  };
+
+  const handleDeleteSelected = async () => {
+    const confirmed = window.confirm("Are you sure you want to delete the selected users?");
+    if (!confirmed) return;
+
+    try {
+      await Promise.all(
+        selectedUsers.map((id) =>
+          axios.delete(`http://localhost:5000/api/users/${id}`)
+        )
+      );
+      const updatedUsers = users.filter((user) => !selectedUsers.includes(user._id));
+      setUsers(updatedUsers);
+      setSelectedUsers([]);
+    } catch (error) {
+      console.error("Error deleting users:", error.response?.data || error.message);
+    }
+  };
+
   const handleDelete = async (id) => {
     try {
       await axios.delete(`http://localhost:5000/api/users/${id}`);
-      const updatedUsers = users.filter(user => user._id !== id);
+      const updatedUsers = users.filter((user) => user._id !== id);
       setUsers(updatedUsers);
     } catch (error) {
       console.error("Error deleting user:", error.response?.data || error.message);
@@ -345,12 +389,45 @@ const Users = ({ users, setUsers }) => {
 
   return (
     <Container className="p-5">
+      <Row className="mb-3">
+        <Col md={6}>
+          <h2>Users Section</h2>
+        </Col>
+        <Col md={6} className="text-end">
+          <Button
+            variant="danger"
+            onClick={handleDeleteSelected}
+            disabled={selectedUsers.length === 0}
+          >
+            Delete Selected
+          </Button>
+        </Col>
+      </Row>
+
+      <Row className="mb-3">
+        <Col md={12}>
+          {/* Search Box */}
+          <Form.Control
+            type="text"
+            placeholder="Search by name, email, phone, password"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)} // Update search term on change
+          />
+        </Col>
+      </Row>
+
       <Row>
         <Col md={12}>
-          <h2>Users Section</h2>
           <Table striped bordered hover>
             <thead>
               <tr>
+                <th>
+                  <Form.Check
+                    type="checkbox"
+                    onChange={handleSelectAll}
+                    checked={selectedUsers.length === filteredUsers.length && filteredUsers.length > 0}
+                  />
+                </th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Phone Number</th>
@@ -360,19 +437,41 @@ const Users = ({ users, setUsers }) => {
               </tr>
             </thead>
             <tbody>
-              {users.map(user => (
-                <tr key={user._id}>
-                  <td>{user.name}</td>
-                  <td>{user.email}</td>
-                  <td>{user.phone}</td>
-                  <td>{user.password}</td> {/* Display password */}
-                  <td>{user.confirmPassword}</td> {/* Display confirmPassword */}
-                  <td>
-                    <Button variant="primary" as={Link} to={`/admin/users/edit/${user._id}`}>Edit</Button>{' '}
-                    <Button variant="danger" onClick={() => handleDelete(user._id)}>Delete</Button>
+              {filteredUsers.length > 0 ? (
+                filteredUsers.map((user) => (
+                  <tr key={user._id}>
+                    <td>
+                      <Form.Check
+                        type="checkbox"
+                        checked={selectedUsers.includes(user._id)}
+                        onChange={() => handleCheckboxChange(user._id)}
+                      />
+                    </td>
+                    <td>{user.name}</td>
+                    <td>{user.email}</td>
+                    <td>{user.phone}</td>
+                    <td>{user.password}</td>
+                    <td>{user.confirmPassword}</td>
+                    <td>
+                      <Button variant="primary" as={Link} to={`/admin/users/edit/${user._id}`}>
+                        Edit
+                      </Button>{' '}
+                      <Button variant="danger" onClick={() => handleDelete(user._id)}>
+                        Delete
+                      </Button>{' '}
+                      <Button variant="info" as={Link} to={`/admin/users/view/${user._id}`}>
+                        View
+                      </Button>
+                    </td>
+                  </tr>
+                ))
+              ) : (
+                <tr>
+                  <td colSpan="7" className="text-center">
+                    No users found
                   </td>
                 </tr>
-              ))}
+              )}
             </tbody>
           </Table>
         </Col>
@@ -383,15 +482,14 @@ const Users = ({ users, setUsers }) => {
 
 
 // EditUser Component
-// EditUser Component
-const EditUser = ({ users, setUsers }) => {
+const EditUser = ({ users, setUsers, viewMode = false }) => {
   const { id } = useParams(); // Get the ID from the URL
   const navigate = useNavigate();
   const [user, setUser] = useState({ name: '', email: '', phone: '', password: '', confirmPassword: '' });
   const [isLoading, setIsLoading] = useState(true); // State to track loading
   const [error, setError] = useState(null); // State to track errors
 
-  // Fetch the user data when the component is mounted, if we are editing a user
+  // Fetch the user data when the component is mounted
   useEffect(() => {
     if (id) {
       const fetchUser = async () => {
@@ -401,7 +499,7 @@ const EditUser = ({ users, setUsers }) => {
           setUser(response.data); // Set the user data in the state
         } catch (error) {
           console.error("Error fetching user:", error.response?.data || error.message);
-          setError("Failed to load user data. Please try again."); // Set error state
+          setError("Failed to load user data. Please try again.");
         } finally {
           setIsLoading(false); // Set loading to false after the request
         }
@@ -414,6 +512,7 @@ const EditUser = ({ users, setUsers }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (viewMode) return; // Prevent submission in view mode
     try {
       if (id) {
         const response = await axios.put(`http://localhost:5000/api/users/${id}`, user);
@@ -421,30 +520,32 @@ const EditUser = ({ users, setUsers }) => {
         setUsers(updatedUsers); // Update the user list in the parent component
       } else {
         const response = await axios.post('http://localhost:5000/api/users', user);
-        setUsers([...users, response.data]); // Add a new user to the list
+        setUsers([response.data, ...users]); // Add a new user to the top of the list
       }
       navigate('/admin/users/manage'); // Navigate back to the manage users page
     } catch (error) {
       console.error("Error saving user:", error.response?.data || error.message);
-      setError("Failed to save user data. Please try again."); // Set error state
+      setError("Failed to save user data. Please try again.");
     }
   };
 
   const handleChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
-
+  const handleBack = () => {
+    navigate('/admin/users/manage'); // Navigate back to Manage Users
+  };
   if (isLoading) {
-    return <div>Loading...</div>; // Show a loading message while fetching the user data
+    return <div>Loading...</div>;
   }
 
   if (error) {
-    return <div>{error}</div>; // Display any error that occurs during data fetching
+    return <div>{error}</div>;
   }
 
   return (
     <Container className="p-5">
-      <h2>{id ? 'Edit User' : 'Add User'}</h2>
+      <h2>{viewMode ? 'View User' : id ? 'Edit User' : 'Add User'}</h2>
       <Form onSubmit={handleSubmit}>
         <Form.Group>
           <Form.Label>Name</Form.Label>
@@ -454,6 +555,7 @@ const EditUser = ({ users, setUsers }) => {
             value={user.name}
             onChange={handleChange}
             required
+            disabled={viewMode} // Disable if in view mode
           />
         </Form.Group>
         <Form.Group>
@@ -464,6 +566,7 @@ const EditUser = ({ users, setUsers }) => {
             value={user.email}
             onChange={handleChange}
             required
+            disabled={viewMode} // Disable if in view mode
           />
         </Form.Group>
         <Form.Group>
@@ -474,6 +577,7 @@ const EditUser = ({ users, setUsers }) => {
             value={user.phone}
             onChange={handleChange}
             required
+            disabled={viewMode} // Disable if in view mode
           />
         </Form.Group>
         <Form.Group>
@@ -484,6 +588,7 @@ const EditUser = ({ users, setUsers }) => {
             value={user.password}
             onChange={handleChange}
             required
+            disabled={viewMode} // Disable if in view mode
           />
         </Form.Group>
         <Form.Group>
@@ -494,15 +599,25 @@ const EditUser = ({ users, setUsers }) => {
             value={user.confirmPassword}
             onChange={handleChange}
             required
+            disabled={viewMode} // Disable if in view mode
           />
         </Form.Group>
-        <Button variant="success" type="submit" className="mt-3">
-          {id ? 'Update User' : 'Add User'}
-        </Button>
+         {/* Back to Manage Users Button */}
+         {viewMode && (
+          <Button variant="secondary" className="mt-3" onClick={handleBack}>
+            Back to Manage Users
+          </Button>
+        )}
+        {!viewMode && (
+          <Button variant="success" type="submit" className="mt-3">
+            {id ? 'Update User' : 'Add User'}
+          </Button>
+        )}
       </Form>
     </Container>
   );
 };
+
 
 
 
@@ -572,6 +687,7 @@ const AdminPanel = () => {
             <Route path="/users/manage" element={<Users users={users} setUsers={setUsers} />} />
             <Route path="/users/add" element={<EditUser users={users} setUsers={setUsers} />} />
             <Route path="/users/edit/:id" element={<EditUser users={users} setUsers={setUsers} />} />
+            <Route path="/users/view/:id" element={<EditUser users={users} setUsers={setUsers} viewMode={true} />} />
           </Routes>
         </Col>
       </Row>
